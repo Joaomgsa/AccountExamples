@@ -12,7 +12,7 @@ public class Program {
         acc1.withdraw(200.0);
 
 
-        //Upcasting
+
 
 
         Account acc2 = new SavingsAccount(1002, "Bob",1000.0, 0.01 );
