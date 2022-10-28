@@ -19,5 +19,17 @@ public class Program {
         //Downcasting
         BusinessAccount acc4 = (BusinessAccount) acc2;
         acc4.loan(100.0);
+
+        //BusinessAccount acc5 = (BusinessAccount) acc3;
+        if (acc3 instanceof BusinessAccount) {
+            BusinessAccount acc5 = (BusinessAccount) acc3;
+            acc5.loan(200.0);
+            System.out.println("Loan!");
+        }
+        if (acc3 instanceof SavingsAccount){
+            SavingsAccount acc5 = (SavingsAccount) acc3;
+            acc5.updateBalance();
+            System.out.println("Update!");
+        }
     }
 }
